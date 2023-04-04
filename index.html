@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-image: url("https://cdn.wallpapersafari.com/1/80/8DYndB.png");
+            font-family: 'Delicious Handrawn', cursive;
+
+        }
+
+        div {
+            background-color: #daf7c1;
+            width: 320px;
+            margin: 8px;
+            padding: 8px 18px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                        
+            
+        }
+    
+
+        div:hover {
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+
+
+        }
+
+        img {
+          width: 40px; 
+          height: 40px; 
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <div onclick="mandaZap(this)">
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+         
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+         
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+         
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+    <div>
+        <p>Bom dia, luz do dia</p>
+        <img src="./—Pngtree—whatsapp icon logo_3560534.png">
+    </div>
+
+    <script>
+        function mandaZap(elemento) {
+            let texto = elemento.firstElementChild.innerText;
+            console.log(elemento.firstElementChild.innerText)
+            let numero = prompt("Qual é o número?");
+         
+          let zapLink = `https://api.whatsapp.com/send?phone=55${numero}&text=${texto}`;
+            window.open(zapLink);
+        }
+
+    </script>
+</body>
+</html>
